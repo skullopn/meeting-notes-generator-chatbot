@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+}
+
+#chat-container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+#chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    text-align: left;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #b3e5fc;
+    border: 1px solid #81d4fa;
+    text-align: left;
+}
+
+.bot-message {
+    background: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+.dark-mode #chat-container {
+    background: #333;
+    border: 2px solid #555;
+}
+
+.dark-mode #chat-box {
+    background: #444;
+    border: 1px solid #666;
+}
+
+.dark-mode .user-message {
+    background: #1565c0;
+    border: 1px solid #0d47a1;
+    color: white;
+}
+
+.dark-mode .bot-message {
+    background: #555;
+    border: 1px solid #777;
+    color: white;
+}
+
+.dark-mode input[type="text"] {
+    background: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+.dark-mode button {
+    background: #ff9800;
+}
+
+.dark-mode button:hover {
+    background: #e68900;
+}
+
+.dark-mode #theme-toggle {
+    background: #ff9800;
+}
